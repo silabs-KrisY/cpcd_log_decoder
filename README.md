@@ -1,9 +1,11 @@
 # cpcd_log_decoder
-cpcd_log_decoder is a Python utility that decodes raw frames from a cpc-daemon log file to aid in debugging.
+cpcd_log_decoder is a Python utility that decodes raw frames from a [cpc-daemon](https://github.com/SiliconLabs/cpc-daemon) log file to aid in debugging.
 
 # Instructions
    1. Make sure frame trace is enabled in your cpcd.conf:
-
+   ```
+   enable_frame_trace: true
+   ```
    2. Run cpcd_log_decoder.py on your cpcd log file which includes the frame traces:
    ```
    $ python3 cpcd_log_decoder.py <infile> <outfile>
